@@ -14,7 +14,7 @@ public class Java7VsJava8 {
 
         //After
         int total1 = IntStream.rangeClosed(0, 50) //int i = 0; i<50; i++
-                .map(Integer :: new) //for loop
+                .map(Integer :: new) //for loop, renvoie un nouveau stream
                 .sum(); // total += i
 
         System.out.println("Total java 8: " + total1);
